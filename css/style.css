@@ -445,7 +445,7 @@ nav.sticky .nav-link:hover {
 	animation-delay: position 1s;
 	transition: transform 0.6s;/* smart move! */
 }
-/* AFTER */
+/* Pseudo elements */
 .latest .card-title::after {
 	content: 'new';
 	background-color: #36d9d1;
@@ -459,6 +459,56 @@ nav.sticky .nav-link:hover {
 	border-radius: .5rem;
 	font-size: 1rem;
 	padding: .2rem;
+}
+.hero p::before {
+	content: open-quote;
+	font-size: 4rem;
+	color: rgba(235, 235, 250, 0.5);
+}
+.hero p::after {
+	content: close-quote;
+	font-size: 4rem;
+	color: rgba(235, 235, 250, 0.5);
+}
+.mini-nav .gotoprod::before {
+	content: 'Go to Products page';
+	display: block;
+	font-size: 1rem;
+	position: absolute;
+	right: 0;
+	background-color: #e6e6e6;
+	padding: 1rem;
+	transform: scale(0);
+	border-radius: .5rem;
+}
+.proceed:hover .gotoprod::before {
+	transform: scale(1.0);
+	transition: 0.6s;
+}
+.mini-nav .gotostory::before {
+	content: 'Go to Story page';
+	display: block;
+	font-size: 1rem;
+	position: absolute;
+	right: 0;
+	background-color: #e6e6e6;
+	padding: 1rem;
+	transform: scale(0);
+	border-radius: .5rem;
+}
+.proceed:hover .gotostory::before {
+	transform: scale(1.0);
+	transition: 0.6s;
+}
+
+/* 	intro */
+.container, .container-fluid {
+	opacity: 0;
+	transition: 0.6s;
+}
+.appear {
+	opacity: 100%;
+	transition: 0.6;
 }
 
 @media (max-width: 640px) {

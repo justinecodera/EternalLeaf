@@ -7,13 +7,18 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<link rel="shortcut icon" href="img/title-logo.ico" />
-
+		<script type="text/javascript">
+			window.addEventListener("scroll", function(){
+				var map = document.querySelector(".contact-map");
+				map.classList.toggle("appear", window.scrollY > 50);
+			})
+		</script>
 </head>
 <body>
 
 <!-- navbar -->
 <nav class="navbar navbar-expand-lg sticky">
-  <div class="container-fluid">
+  <div class="container-fluid appear">
   	<img src="img/eternalleaf-icon.png">
     <a class="navbar-brand" href="#">Eternal Leaf</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +52,7 @@
 </nav>
 
 <!-- contacts -->
-<div class="container contacts-padding">
+<div class="container contacts-padding appear">
 	<div class="row">
 		<h1>Contact us</h1>
 	</div>
@@ -100,8 +105,8 @@
 				}</style></div></div>
 	</div>
 </div>
-<!-- footer -->
-<div class="container-fluid footer">
+<!-- Footer section -->
+	<div class="container-fluid footer appear">
 		<div class="row justify-content-center row-logo">
 			<div class="col-4">
 				<img src="img/footer-icon.png" class="logo">
@@ -113,16 +118,16 @@
 			</h1>
 		</div>
 		<div class="row text-center icons row-links">
-			<a href="">
+			<a href="https://www.facebook.com/sumato.ahiro">
 				<img src="img/facebook-icon.png" alt="" class="footer-icon">
 			</a>
-			<a href="">
+			<a href="https://www.facebook.com/sumato.ahiro">
 				<img src="img/insta-icon.png" alt="" class="footer-icon">
 			</a>
-			<a href="">
+			<a href="https://www.facebook.com/sumato.ahiro">
 				<img src="img/twitter-icon.png" alt="" class="footer-icon">
 			</a>
-			<a href="">
+			<a href="https://www.facebook.com/sumato.ahiro">
 				<img src="img/whatsapp-icon.png" alt="" class="footer-icon">
 			</a>
 		</div>

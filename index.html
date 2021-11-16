@@ -9,6 +9,10 @@
 			window.addEventListener("scroll", function(){
 				var navbar = document.querySelector("nav");
 				navbar.classList.toggle("sticky", window.scrollY > 50);
+				var products = document.querySelector(".products-container");
+				products.classList.toggle("appear", window.scrollY > 200);
+				var story = document.querySelector(".story-container");
+				story.classList.toggle("appear", window.scrollY > 1400);
 			})
 	</script>
 	<link rel="shortcut icon" href="img/title-logo.ico" />
@@ -17,7 +21,7 @@
 <body >
 	<!-- navbar -->
 <nav class="navbar navbar-expand-lg ">
-  <div class="container-fluid">
+  <div class="container-fluid appear">
   	<img src="img/eternalleaf-icon.png">
     <a class="navbar-brand" href="#">Eternal Leaf</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,7 +56,7 @@
 
 
 	<!-- hero section -->
-	<div class="container-fluid">
+	<div class="container-fluid appear">
 		<div class="row hero">
 			<img src="img/hero.jpg"> 
 			<div class="col-12 align-self-center">
@@ -73,7 +77,7 @@
 	</div>
 
 	<!-- products section -->
-	<div class="container">
+	<div class="container products-container">
 
 		<div class="row justify-content-between">
 			<div class="col mini-nav">
@@ -81,7 +85,7 @@
 			</div>
 			<div class="col mini-nav">
 				<a href="products.html" class="proceed">
-					<h1>-></h1>
+					<h1 class="gotoprod">-></h1>
 				</a>
 				
 			</div>
@@ -152,14 +156,14 @@
 	</div>
 
 	<!-- story section -->
-	<div class="container">
+	<div class="container story-container">
 		<div class="row justify-content-between">
 			<div class="col mini-nav">
 				<h1>Stories</h1>
 			</div>
 			<div class="col mini-nav">
 				<a href="stories.html" class="proceed">
-					<h1>-></h1>
+					<h1 class="gotostory">-></h1>
 				</a>
 			</div>
 		</div>
@@ -189,7 +193,7 @@
 	</div>
 
 	<!-- Footer section -->
-	<div class="container-fluid footer">
+	<div class="container-fluid footer appear">
 		<div class="row justify-content-center row-logo">
 			<div class="col-4">
 				<img src="img/footer-icon.png" class="logo">
@@ -201,16 +205,16 @@
 			</h1>
 		</div>
 		<div class="row text-center icons row-links">
-			<a href="">
+			<a href="https://www.facebook.com/sumato.ahiro">
 				<img src="img/facebook-icon.png" alt="" class="footer-icon">
 			</a>
-			<a href="">
+			<a href="https://www.facebook.com/sumato.ahiro">
 				<img src="img/insta-icon.png" alt="" class="footer-icon">
 			</a>
-			<a href="">
+			<a href="https://www.facebook.com/sumato.ahiro">
 				<img src="img/twitter-icon.png" alt="" class="footer-icon">
 			</a>
-			<a href="">
+			<a href="https://www.facebook.com/sumato.ahiro">
 				<img src="img/whatsapp-icon.png" alt="" class="footer-icon">
 			</a>
 		</div>
